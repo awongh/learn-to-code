@@ -30,25 +30,43 @@
     <link rel="icon" href="https://via.placeholder.com/32x32.png?text=Favicon" type="image/png">
 
     <link rel="stylesheet" href="output.css">
-    <script src="https://unpkg.com/scroll-into-view@1.16.2/scrollIntoView.min.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+<body class="min-h-screen flex items-center justify-center">
 
-    <div class="w-full max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-
-      <section class="mb-6">
-
-        <h3>Neue Coding's</h3>
-
-        <h1>Learn to Code with AI</h1>
-
-        <h4>Accelerate your learning leveraging AI as your personal tutor</h4>
-
-        <p>A new course incorporating live experience and AI as your personal coding tutor. Learn with structure in a peer environment and with AI by your side to help you at any point.</p>
-      </section>
-      <section class="mb-6">
+    <div class="relative w-full max-w-xl mx-auto p-0">
         <!--CONTENT-->
-      </section>
     </div>
+
+    <script>
+        document.fonts.ready.then(function() {
+            document.body.classList.add('font-loaded');
+        });
+    </script>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("header-link-cont");
+      if (container) {
+        const links = container.querySelectorAll("a");
+        links.forEach(link => {
+          link.addEventListener("click", event => {
+            event.preventDefault(); // Prevent default link behavior
+            const targetId = link.getAttribute("href").substring(1); // Remove the '#' from href
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          });
+        });
+      }
+    });
+  </script>
+
 </body>
 </html>

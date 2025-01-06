@@ -14,6 +14,8 @@ A new course incorporating live experience and AI as your personal coding tutor.
 [What is it?](#what-is-it%3F)
 [What You'll Learn](#what-you%E2%80%99ll-learn)
 [Pedagogy](#pedagogy)
+[Who We Are](#who-are-we%3F)
+[Contact](#contact)
 
 </div>
 
@@ -21,12 +23,20 @@ A new course incorporating live experience and AI as your personal coding tutor.
 </div>
 
 <div class="pt-4 pb-10 px-6">
-<div class="aspect-w-16 aspect-h-9">
+<div class="max-w-xl mx-auto aspect-[16/9]">
 
-<video controls>
-  <source src="https://learn-to-code-with-ai.s3.us-east-1.amazonaws.com/L2C_Testimonial_cut.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+<video id="my-video" class="video-js  w-full h-full" controls preload="auto"  poster="https://placehold.co/1920x1080" data-setup="{aspectRatio: '16:9',  fluid: true }">
+<source src="https://learn-to-code-with-ai.s3.us-east-1.amazonaws.com/L2C_Testimonial_cut.mp4" type="video/mp4" />
+<p class="vjs-no-js">
+To view this video please enable JavaScript, and consider upgrading to a
+web browser that
+<a href="https://videojs.com/html5-video-support/" target="_blank"
+>supports HTML5 video</a
+>
+</p>
 </video>
+
+
 
 </div>
 </div>
@@ -118,5 +128,25 @@ During student’s flipped classroom solo work, they are instructed to use AI as
 All of the courses problems can be explained and solved by all the state of the art LLM AIs. (Anthropic, OpenAI, Microsoft, Google, etc.). In the course, AI is used as a tool to get students unstuck (a common issue in computer science coding tasks), further explain concepts and help students explore tertiary topics if they so wish.
 
 In addition, once students have gained fluency with basic code structure and the ability/vocabulary to prompt the AI with the correctly phrased questions, AI can help them construct real-world code applications post-course. The course not only instructs students on how to use the AI as a knowledge tool, but also as a tool for investigating and coding programs that are more complex.
+
+</div>
+
+<div class="section-b">
+
+# Who Are We?
+
+Andrew and Akira have known each other since Lakeshore elementary school in San Francisco. Together they have a few decades of classroom and curriculum writing experience for children and adults in a variety of modalities.
+
+Andrew is an adjunct professor of computer science at the University of San Francisco. He was previously at the San Francisco Unified School District creating technology curriculum for K-12.
+
+Akira is a previous distiguished faculty at General Assembly where he taught the Software Engineering Immersive course. He was CTO of Rocket Academy, a venture-funded coding bootcamp startup in Singapore.
+
+</div>
+
+<div class="section-a">
+
+# Contact
+
+Find us at: <a href="mailto:hello@learn-to-code-with-ai.org">hello@learn-to-code-with-ai.org</a>
 
 </div>

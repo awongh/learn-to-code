@@ -61,12 +61,15 @@ body.font-loaded .google-font {
   }
 
   .header-links{
+    @apply flex items-center justify-center;
+
     p{
-      @apply flex justify-center space-x-10 py-6;
+      @apply flex flex-wrap justify-center gap-x-3 gap-y-2 p-1;
+
       a{
         all: unset; /* Removes all inherited and default styles */
         text-decoration:underline;
-        @apply text-lg font-serif font-bold;
+        @apply font-serif font-bold text-sm whitespace-nowrap;
       }
     }
 

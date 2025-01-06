@@ -143,7 +143,7 @@ Akira is a previous distiguished faculty at General Assembly where he taught the
 
 </div>
 
-<div class="section-a">
+<div class="footer">
 
 # Contact
 

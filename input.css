@@ -85,9 +85,88 @@ body.font-loaded .google-font {
 }
 
 .section-a{
-  @apply bg-gray-100 p-12 shadow-lg md:shadow-none;
+  @apply bg-gray-100 p-12;
 }
 
 .section-b{
   @apply bg-white p-12;
+}
+
+
+.footer{
+  @apply bg-gray-100 p-12;
+}
+
+
+/* blurry bg images */
+/* https://www.fffuel.co/bbblurry/ */
+
+.header-section, .section-a, .section-b, .footer{
+  position:relative;
+  overflow:visible;
+}
+
+.header-section::before, .section-a::before, .section-b::before, .footer::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('blur.svg');
+  background-size: 800px 900px;
+  background-position: top left;
+  z-index: 0;
+  background-repeat: no-repeat;
+  width:1000%;
+  height:1000px;
+}
+
+.header-section::before{
+  background-size: 1300px 700px;
+  background-position:  left;
+  transform: translateX(-250px);
+}
+
+.main-cont div:nth-child(3)::before {
+  background-size: 600px 1300px;
+  background-position: top left;
+  transform: rotate(10deg) translateX(-250px);
+}
+
+
+.main-cont div:nth-child(4)::before {
+  background-size: 1100px 600px;
+  background-position: bottom left;
+  transform: rotate(50deg) translateX(-350px);
+}
+
+.main-cont div:nth-child(5)::before {
+  background-size: 800px 400px;
+  background-position: center left;
+  transform: rotate(190deg) translateX(350px);
+}
+
+.main-cont div:nth-child(6)::before {
+  background-size: 1000px 1600px;
+  background-position: top center;
+  transform: rotate(100deg) translateY(550px);
+}
+
+.main-cont div:nth-child(7)::before {
+  background-size: 800px 1400px;
+  background-position: center left;
+  transform: rotate(20deg) translateY(-150px);
+}
+
+.main-cont div:nth-child(8)::before {
+  background-size: 700px 1500px;
+  background-position: top right;
+  transform: rotate(60deg) translateX(-150px);
+}
+
+.main-cont div:nth-child(9)::before {
+  background-size: 700px 1500px;
+  background-position: top right;
+  transform: rotate(60deg) translateX(-150px);
 }

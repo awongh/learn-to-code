@@ -46,6 +46,7 @@
       </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.21.1/video.min.js"></script>
     <script>
     document.fonts.ready.then(function() {
         document.body.classList.add('font-loaded');
@@ -63,14 +64,18 @@
             const targetId = link.getAttribute("href").substring(1); // Remove the '#' from href
             const targetElement = document.getElementById(targetId);
             if (targetElement) {
-              targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+              targetElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
             }
           });
         });
       }
 
+      videojs('my-video', {
+        aspectRatio: '16:9',
+        fluid: true
+      });
+
     });
   </script>
-  <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
 </body>
 </html>

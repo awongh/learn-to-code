@@ -25,7 +25,7 @@ A new course incorporating live experience and AI as your personal coding tutor.
 <div class="pt-4 pb-10 px-6">
 <div class="max-w-xl mx-auto aspect-[16/9]">
 
-<video id="my-video" class="video-js  w-full h-full" controls preload="auto"  poster="https://placehold.co/1920x1080" data-setup="{aspectRatio: '16:9',  fluid: true }">
+<video id="my-video" class="video-js  w-full h-full" controls preload="auto"  poster="https://placehold.co/1920x1080">
 <source src="https://learn-to-code-with-ai.s3.us-east-1.amazonaws.com/L2C_Testimonial_cut.mp4" type="video/mp4" />
 <p class="vjs-no-js">
 To view this video please enable JavaScript, and consider upgrading to a

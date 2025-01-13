@@ -108,6 +108,7 @@ body.font-loaded .google-font {
 
 .header-section::before, .section-a::before, .section-b::before, .footer::before{
   content: '';
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;

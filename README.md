@@ -2,7 +2,7 @@
 
 ```bash
 node build.js input.md > content.html && \
-sed '/<!--CONTENT-->/r content.html' template.html > docs/output.html && \
+sed '/<!--CONTENT-->/r content.html' template.html > docs/index.html && \
 rm content.html && \
 npx tailwindcss -i input.css -o ./docs/output.css --content './docs/*.{html,js}' --minify
 ```

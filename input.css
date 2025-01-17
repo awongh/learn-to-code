@@ -171,3 +171,9 @@ body.font-loaded .google-font {
   background-position: top right;
   transform: rotate(60deg) translateX(-150px);
 }
+
+.profile-cont{
+  p{
+    @apply w-full flex gap-4;
+  }
+}

@@ -135,6 +135,12 @@ In addition, once students have gained fluency with basic code structure and the
 
 # Who Are We?
 
+<span class="profile-cont">
+
+![andrew profile](roth-trns.png) ![akira profile](wng-trns.png)
+
+</span>
+
 Andrew and Akira have known each other since Lakeshore elementary school in San Francisco. Together they have a few decades of classroom and curriculum writing experience for children and adults in a variety of modalities.
 
 Andrew is an adjunct professor of computer science at the University of San Francisco. He was previously at the San Francisco Unified School District creating technology curriculum for K-12.

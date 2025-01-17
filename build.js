@@ -18,6 +18,20 @@ plugins.forEach(pluginName => {
   md.use(plugin);
 });
 
+const markdownItEleventyImg = require("markdown-it-eleventy-img");
+
+md.use(markdownItEleventyImg, {
+  imgOptions: {
+    urlPath: "./",
+
+    outputDir: "./docs/"
+  },
+  globalAttributes: {
+    outputDir: "./docs/"
+  }
+
+});
+
 // Read the input Markdown file (provided as the first command-line argument)
 const input = fs.readFileSync(process.argv[2], 'utf8');
 

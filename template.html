@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,30 @@
     <title>Learn to Code with AI</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Learn to Code With AI is a new course that teaches programming fundamentals using live instruction and asynchronous self-study aided by AI.">
+    <meta name="description"
+        content="Learn to Code With AI is a new course that teaches programming fundamentals using live instruction and asynchronous self-study aided by AI.">
     <meta name="keywords" content="AI, learn to code, learning, curriculum, programming, software engineering">
     <meta name="author" content="Neue Coding">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
     <meta property="og:title" content="Learn to Code with AI">
-    <meta property="og:description" content="Learn to Code With AI is a new course that teaches programming fundamentals using live instruction and asynchronous self-study aided by AI.">
+    <meta property="og:description"
+        content="Learn to Code With AI is a new course that teaches programming fundamentals using live instruction and asynchronous self-study aided by AI.">
     <meta property="og:url" content="https://learn-to-code-with-ai.org">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Hello+World">
+    <meta property="og:image" content="https://learn-to-code-with-ai.org/screencap.jpeg">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title"  content="Learn to Code with AI">
-    <meta name="twitter:description" content="Learn to Code With AI is a new course that teaches programming fundamentals using live instruction and asynchronous self-study aided by AI.">
+    <meta name="twitter:title" content="Learn to Code with AI">
+    <meta name="twitter:description"
+        content="Learn to Code With AI is a new course that teaches programming fundamentals using live instruction and asynchronous self-study aided by AI.">
     <meta name="twitter:url" content="https://learn-to-code-with-ai.org">
-    <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Hello+World">
+    <meta name="twitter:image" content="https://learn-to-code-with-ai.org/screencap.jpeg">
 
     <!-- Favicon -->
-    <link rel="icon" href="https://via.placeholder.com/32x32.png?text=Favicon" type="image/png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="output.css">
 
@@ -38,44 +43,46 @@
 
     <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
 </head>
+
 <body class="min-h-screen flex items-center justify-center">
 
     <div class="relative w-full p-0 overflow-hidden">
-      <div class="relative w-full max-w-xl mx-auto p-0 main-cont">
-          <!--CONTENT-->
-      </div>
+        <div class="relative w-full max-w-xl mx-auto p-0 main-cont">
+            <!--CONTENT-->
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.21.1/video.min.js"></script>
     <script>
-    document.fonts.ready.then(function() {
-        document.body.classList.add('font-loaded');
-    });
-
-    document.addEventListener("DOMContentLoaded", () => {
-
-      // scroll to link menu stuff
-      const container = document.getElementById("header-link-cont");
-      if (container) {
-        const links = container.querySelectorAll("a");
-        links.forEach(link => {
-          link.addEventListener("click", event => {
-            event.preventDefault(); // Prevent default link behavior
-            const targetId = link.getAttribute("href").substring(1); // Remove the '#' from href
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-              targetElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
-            }
-          });
+        document.fonts.ready.then(function () {
+            document.body.classList.add('font-loaded');
         });
-      }
 
-      videojs('my-video', {
-        aspectRatio: '16:9',
-        fluid: true
-      });
+        document.addEventListener("DOMContentLoaded", () => {
 
-    });
-  </script>
+            // scroll to link menu stuff
+            const container = document.getElementById("header-link-cont");
+            if (container) {
+                const links = container.querySelectorAll("a");
+                links.forEach(link => {
+                    link.addEventListener("click", event => {
+                        event.preventDefault(); // Prevent default link behavior
+                        const targetId = link.getAttribute("href").substring(1); // Remove the '#' from href
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
+                        }
+                    });
+                });
+            }
+
+            videojs('my-video', {
+                aspectRatio: '16:9',
+                fluid: true
+            });
+
+        });
+    </script>
 </body>
+
 </html>
